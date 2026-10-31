@@ -1,188 +1,95 @@
-# Awesome-SAAS-Security-Posture-Management-SSPM
+# Awesome SaaS Security Posture Management (SSPM) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top SaaS Security Posture Management (SSPM) Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Configuration Hardening, Identity Risk & Self-Hosted Posture Auditing*  
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **SaaS Security Posture Management (SSPM)**. These tools enable security teams to continuously monitor SaaS application configurations, detect misconfigurations and identity risks, enforce least privilege, and maintain compliance—closing the visibility gap that traditional CASB, IdP, and endpoint tools leave inside third-party SaaS applications.
-
-
-
-**Examples** include CrowdStrike Falcon Shield (with Adaptive Shield), AppOmni, Obsidian Security, Palo Alto SaaS Security, Wing Security, Valence Security, DoControl, Microsoft Defender for Cloud Apps, and Netskope SSPM (the category leaders).
-
-
-
-**Open-source emphasis**: SSPM is a domain where open-source tooling is **severely limited and explicitly acknowledged as such**. A 2026 practitioner guide states plainly: **"There is no open-source SSPM"** . The closest active projects are **ElectricEye** (a multi-cloud, multi-SaaS Python CLI for posture management and attack surface monitoring with controls mapped to 20+ frameworks) , **ClosedSSPM** (a read-only SSPM CLI starting with ServiceNow coverage, Apache-2.0) , and **open-sspm** (a small "who has access to what" service syncing identities from Okta and permissions from GitHub, Datadog, and AWS Identity Center) . The critical caveat: **none match the 150–180+ app coverage, automated remediation, or unified identity-to-device correlation** of commercial SSPM platforms. Organizations requiring enterprise SSPM should evaluate commercial tools; those with narrow, specific needs (ServiceNow, multi-cloud config auditing) can use open-source CLIs as a starting point.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CrowdStrike Falcon Shield (with Adaptive Shield)](https://www.crowdstrike.com/)**  
-
-  The market-leading SSPM, formed by CrowdStrike's acquisition of Adaptive Shield (November 2024) and integration into Falcon Shield . Named the Leader in the 2024 Frost Radar SSPM report (Innovation 4.8/5, Growth 4.5/5) . Features: **3,500+ security checks across 180+ SaaS apps**, identity-first threat detection (ITDR) correlating SaaS activity with on-premises identity behavior via Falcon Identity Protection and Falcon Score, device-to-SaaS-user posture correlation, AI agent discovery and containment, shadow app detection, and automated remediation . **Best for organizations wanting the most complete SSPM** with endpoint-to-SaaS correlation—but it is a premium enterprise platform.
-
-
-
-- **[AppOmni](https://appomni.com/)**  
-
-  SSPM platform focused on deep configuration visibility across major SaaS apps (Salesforce, Workday, M365, NetSuite); Sprinklr case study reports remediation time reduced from weeks to hours with continuous monitoring and actionable findings . FedRAMP authorized for government use . **Best for organizations wanting deep, API-based posture management** for core enterprise SaaS.
-
-
-
-- **[Obsidian Security](https://www.obsidiansecurity.com/)**  
-
-  Next-gen SSPM with three modules: **Integration Risk Management** (maps interconnections between apps, permissions, and activity to reduce integration risk by 80%), **Obsidian Extend** (monitors niche and custom-built SaaS apps beyond the mainstream), and **Compliance Posture Management** (automates mapping to SOC 2, NIST 800-53, ISO 27001, CSA CCM) . **Best for organizations needing third-party integration risk visibility and niche app coverage**—the integration risk angle is a differentiator.
-
-
-
-- **[Palo Alto SaaS Security](https://www.paloaltonetworks.com/)**  
-
-  SSPM within Palo Alto's SASE platform; collaborates with NGFW administrators to create SaaS policy rule recommendations for blocking unsanctioned app activity, with tenant-level granularity for some apps (e.g., blocking downloads from Box for specific tenants) . **Best for organizations standardized on Palo Alto NGFW** wanting inline enforcement alongside posture management.
-
-
-
-- **[Wing Security](https://wing.security/)**  
-
-  SSPM focused on misconfiguration policies (SCuBA framework-based), identity access controls, UEBA, compliance audit trails, tailored threat intelligence, and remediation workflows including bulk OAuth revocation . **Best for mid-market organizations** wanting practical SSPM with remediation playbooks.
-
-
-
-- **[Valence Security](https://www.valencesecurity.com/)**  
-
-  SaaS and AI security platform covering SSPM, ITDR, SaaS discovery, and **AI security/governance** (shadow AI, AI integrations, built-in AI features) . **Best for organizations prioritizing AI-era SaaS risk** alongside traditional posture management.
-
-
-
-- **[DoControl](https://www.docontrol.io/)**  
-
-  SSPM expanding into comprehensive configuration drift management with **200+ SaaS integrations**, built-in compliance frameworks (NIST, ISO, SOC 2, CIS), and AI-powered custom framework/application support . **Best for organizations where configuration drift is the primary concern** and data access governance matters.
-
-
-
-- **[Microsoft Defender for Cloud Apps](https://learn.microsoft.com/)**  
-
-  SSPM within Microsoft's Defender suite; assesses discovered apps against **90+ risk indicators**, surfaces misconfigurations with recommended actions based on CIS benchmarks and app-provider best practices, and feeds SSPM data into **Microsoft Secure Score** . **Best for Microsoft 365-centric organizations** wanting SSPM without a separate vendor.
-
-
-
-- **[Netskope SSPM](https://www.netskope.com/)**  
-
-  SSPM integrated into Netskope's SASE/CASB platform; features **graph-based detection and visualization** with cross-app rules correlating context across SaaS applications to reveal hidden risks, guided remediation, custom rules, and API integrations with SIEM/SOAR and Snowflake/Jira . **Best for organizations standardized on Netskope** wanting SSPM within a unified SASE console.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Multi-Cloud & Multi-SaaS Posture CLIs
-
-
-
-- **[ElectricEye](https://github.com/jonrau1/ElectricEye)**  
-
-  The **most established open-source posture management CLI** for multi-cloud and multi-SaaS environments (~1k GitHub stars, Python) . Features: **asset management, security posture management, and attack surface monitoring** across 100s of services; controls mapped to **20+ industry, regulatory, and best-practice frameworks**; CLI-driven for CI/CD integration . **Critical caveat**: a 2026 practitioner guide notes **ScoutSuite (a sibling tool) has been unmaintained since May 2024** while remaining on recommendation lists—**verify ElectricEye's maintenance cadence before relying on it** . **Best for teams wanting a scriptable, multi-framework posture scanner** as a starting point—not a turnkey SSPM platform.
-
-
-
-### SaaS-Specific Posture Auditing
-
-
-
-- **[ClosedSSPM](https://github.com/PiotrMackowski/ClosedSSPM)**  
-
-  Open-source **SaaS Security Posture Management CLI** (Apache-2.0, Go) . **Read-only**—never writes to your SaaS platform; uses dedicated audit credentials (e.g., ServiceNow `itil` and `security_admin` read-only roles) . Features: **YAML-based custom policies** organized by platform; **SARIF output** importable into DefectDojo for centralized vulnerability management; **MCP server** (stdio transport only, no network exposure) for AI agent access to findings . **Current coverage**: **starts with ServiceNow**—coverage is being expanded platform by platform . **Best for ServiceNow administrators** wanting a focused, auditable posture check—but it is **not a broad SSPM platform** (no Salesforce, M365, or Workday coverage yet).
-
-
-
-- **[open-sspm](https://github.com/open-sspm/open-sspm)**  
-
-  Open-source **"who has access to what" service** (MIT, Go) . Syncs identities from **Okta (IdP)** and permissions from connected apps (**GitHub, Datadog, AWS Identity Center**) to surface access visibility. **Best for small teams** wanting a lightweight access-mapping tool—but it is **identity-access-focused**, not configuration posture management, and covers only a few integrations.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **ScoutSuite** — Multi-cloud security auditing tool; **unmaintained since May 2024** . **Do not adopt for new projects**—listed only to warn against outdated recommendation lists.
-
-- **Steampipe** — Universal SQL interface to APIs (including SaaS); can query cloud and SaaS configurations for custom posture checks . **Infrastructure layer**—not an SSPM product, but useful for building custom checks.
-
-- **forter/security-101-for-saas-startups** — Comprehensive guides and checklists for securing SaaS infrastructure and operations; not a tool, but **practical security guidance** for startups without dedicated security teams .
-
-
-
-**Frameworks for building custom systems**: **ClosedSSPM** provides a read-only, auditable CLI for ServiceNow posture checks with SARIF/DefectDojo integration . **ElectricEye** provides a multi-cloud/multi-SaaS posture scanner with 20+ framework mappings (verify maintenance) . **open-sspm** provides Okta-to-app access visibility . **No open-source project provides the 150+ app coverage, automated remediation, or identity-to-device correlation** of CrowdStrike Falcon Shield, AppOmni, or Obsidian—organizations requiring enterprise SSPM should evaluate commercial platforms. A 2026 practitioner guide confirms: **"There is no open-source SSPM"** .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- SSPM platforms handling SaaS configuration and identity data must comply with organizational security policies and privacy regulations; **audit credentials should be read-only and scoped to the minimum necessary permissions**—ClosedSSPM explicitly recommends read-only ServiceNow roles .
-
-- **Open-source SSPM is explicitly acknowledged as non-existent**—a 2026 practitioner guide states **"There is no open-source SSPM"** and warns that **ScoutSuite has been unmaintained since May 2024** despite appearing on recommendation lists . **ClosedSSPM** provides a focused ServiceNow audit CLI , **ElectricEye** provides multi-cloud posture scanning (verify maintenance) , and **open-sspm** provides Okta-to-app access visibility . **None match the commercial platforms' app coverage, automated remediation, or unified identity-device correlation**—organizations requiring enterprise SSPM should evaluate CrowdStrike Falcon Shield, AppOmni, Obsidian, or other commercial tools.
-
-- Verify license terms for commercial use; ClosedSSPM uses Apache-2.0 , open-sspm uses MIT , and ElectricEye is open-source (check repository) .
-
-
+> A curated list of leading **SaaS Security Posture Management (SSPM)** platforms, tools, and open-source GitHub projects for SaaS configuration hardening, identity & access governance (ITDR), non-human identity (NHI) mapping, shadow SaaS discovery, and continuous compliance auditing.
 
 ---
 
+## Sector Overview & Market Dynamics
 
+The global **SaaS Security Posture Management (SSPM)** market size is valued at approximately **$480M–$500M** and is projected to expand rapidly toward **$3.5B+ by 2030**, recording an aggressive CAGR of ~48%. The sector is currently **moderately fragmented**—driven by agile, venture-backed pure-play innovators (Obsidian Security, AppOmni, Wing Security, Valence Security) addressing specialized risks such as third-party OAuth app permissions, AI agent governance, and SaaS misconfigurations—while steadily undergoing platform consolidation as cybersecurity conglomerates (CrowdStrike, Palo Alto Networks, Microsoft, Netskope) fold SSPM capabilities into unified CNAPP, CASB, and SASE security architectures.
 
-**Made for security architects, SaaS administrators, and teams building posture management capabilities.**  
+---
 
-Let's make SSPM more open, but with clear eyes about the explicit gap that practitioners acknowledge—there is no open-source SSPM today.
+## Table of Contents
+
+- [SaaS / Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Evaluation & Architecture Guide](#evaluation--architecture-guide)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+- [Star History](#star-history)
+
+---
+
+## SaaS / Hosted Platforms
+
+Below is an overview of enterprise SaaS Security Posture Management platforms, comparing vendor market scale (market capitalization / valuation), starting tier pricing, and free tier or trial limits. Sorted by company scale in descending order:
+
+| Platform | Company Scale (Valuation / Market Cap) | Starting Tier Pricing | Free Tier / Trial Limit | Key Focus & Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Defender for Cloud Apps](https://learn.microsoft.com/)** | **~$3.9 Trillion** *(Market Cap, MSFT)* | **$3.50 / user / month** *(standalone annual commit; bundled in M365 E5 / EMS E5)* | **30-Day Free Trial** *(up to 25 user licenses in M365 Security evaluation)* | Native M365 / Entra ID posture auditing, 90+ app risk indicators, CIS benchmark mapping, feeds directly into Microsoft Secure Score. |
+| **[Palo Alto SaaS Security](https://www.paloaltonetworks.com/)** | **~$275 Billion** *(Market Cap, PANW)* | **~$175 / user / year** *(base Prisma Access / SaaS Security mobile user package)* | **30-Day Guided Proof-of-Concept (PoC)** *(includes 30-day VM-Series evaluation)* | Inline enforcement with NGFW integration, tenant-level granular blocking (e.g., Box downloads), unified SASE posture control. |
+| **[CrowdStrike Falcon Shield](https://www.crowdstrike.com/)** | **~$110 Billion** *(Market Cap, CRWD)* | **£155 (~$195) / cloud user / year** *(G-Cloud framework benchmark, 50-user minimum)* | **15-Day Free Trial** *(Falcon SaaS Security / Cloud Security evaluation, no credit card required)* | Formed via Adaptive Shield acquisition; 3,500+ checks across 180+ SaaS apps, ITDR cross-correlation, device-to-SaaS identity risk mapping. |
+| **[Netskope SSPM](https://www.netskope.com/)** | **~$8.8 Billion** *(IPO Valuation, NTSK)* | **~$50 / user / year** *(baseline Max Advantage bundle; enterprise SASE tiers ~$15–$30/user/mo)* | **Guided PoC / Evaluation** *(tenant test sandbox through sales/partner enablement)* | Graph-based correlation rules across SaaS apps, CASB/SASE integration, guided drift remediation, SIEM/SOAR/Snowflake pipelines. |
+| **[Obsidian Security](https://www.obsidiansecurity.com/)** | **~$1.1 Billion** *(Series D Valuation)* | **~$4 / user / month** *(billed annually across organizational headcount)* | **30-Day Free SaaS & AI Risk Assessment** *(limited free tier available for third-party app auditing)* | Integration Risk Management (reduces third-party risk 80%), Obsidian Extend for niche & custom apps, compliance posture (SOC 2, NIST, ISO). |
+| **[AppOmni](https://appomni.com/)** | **~$500 Million** *(Total Raised: $123M; Series C by Thoma Bravo)* | **$7,500 / year** *(starting baseline block of 100 users per SaaS application on AWS Marketplace)* | **Live Custom Product Demo** *(custom pilot evaluation upon technical qualification; no self-serve)* | Deep API posture management for core enterprise suites (Salesforce, Workday, M365, NetSuite); FedRAMP authorized. |
+| **[DoControl](https://www.docontrol.io/)** | **~$150 Million** *(Total Raised: $45M; Acquired by Spin Systems)* | **$30,000 / year** *(annual mid-market contract for 500–1,500 users across 2–3 core apps)* | **30-Day Free SaaS Risk Exposure Assessment** *(available via AWS Marketplace $0 private offer)* | Configuration drift management across 200+ SaaS integrations, automated data access remediation playbooks, custom framework AI support. |
+| **[Valence Security](https://www.valencesecurity.com/)** | **~$150 Million** *(Total Raised: $32M; Series A by M12 & YL Ventures)* | **$15,000 / year** *(annual baseline starter deployment across core SaaS/AI environments)* | **5-Day Guided SaaS Security Risk Assessment** *(agentless scan across M365, Google Workspace, and GitHub)* | SaaS and AI Security Posture Management (SSPM + AI-SPM), non-human identity (NHI) / OAuth integration discovery, ITDR playbooks. |
+| **[Wing Security](https://wing.security/)** | **~$120 Million** *(Total Raised: $26M; Series A by GGV Capital)* | **$18 / user / year** *(starting paid tier for automated remediation & enterprise apps)* | **Forever Free Tier** *(unlimited SaaS discovery, SaaS Pulse health scoring, up to 100 app connections)* | Freemium discovery engine, SCuBA framework misconfiguration policies, bulk OAuth token revocation, shadow IT posture assessment. |
+
+---
+
+## Open-Source GitHub Projects
+
+Open-source tooling in SSPM consists primarily of CLI posture evaluators, configuration baseline auditors, and access sync engines. 
+
+The table below presents the top open-source projects sorted by GitHub star count in descending order. Each badge links directly to the repository's stargazers:
+
+| Repository | GitHub Stars | Focus & Description |
+| :--- | :--- | :--- |
+| **[turbot/steampipe](https://github.com/turbot/steampipe)** | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe?style=social&color=white)](https://github.com/turbot/steampipe/stargazers) | Universal SQL query interface for APIs. Enables live SQL querying of SaaS security posture and configurations across Slack, GitHub, Google Workspace, Okta, and major clouds. |
+| **[nccgroup/ScoutSuite](https://github.com/nccgroup/ScoutSuite)** | [![GitHub stars](https://img.shields.io/github/stars/nccgroup/ScoutSuite?style=social&color=white)](https://github.com/nccgroup/ScoutSuite/stargazers) | Multi-cloud and multi-tenant security auditing tool. *(Note: Unmaintained since May 2024; retained for historical context and auditing inspiration)*. |
+| **[forter/security-101-for-saas-startups](https://github.com/forter/security-101-for-saas-startups)** | [![GitHub stars](https://img.shields.io/github/stars/forter/security-101-for-saas-startups?style=social&color=white)](https://github.com/forter/security-101-for-saas-startups/stargazers) | Comprehensive baseline checklists, architectural patterns, and hardening guides for securing modern SaaS companies and operations. |
+| **[cisagov/ScubaGear](https://github.com/cisagov/ScubaGear)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/ScubaGear?style=social&color=white)](https://github.com/cisagov/ScubaGear/stargazers) | CISA's official assessment tool for Microsoft 365 security posture (SCuBA). Evaluates tenant configurations against CISA baselines via PowerShell and Open Policy Agent (OPA). |
+| **[BishopFox/cloudfox](https://github.com/BishopFox/cloudfox)** | [![GitHub stars](https://img.shields.io/github/stars/BishopFox/cloudfox?style=social&color=white)](https://github.com/BishopFox/cloudfox/stargazers) | Automated situational awareness and attack path discovery tool for cloud and federated identity tenants. |
+| **[cisagov/Sparrow](https://github.com/cisagov/Sparrow)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/Sparrow?style=social&color=white)](https://github.com/cisagov/Sparrow/stargazers) | CISA's forensic tool designed to detect compromised accounts, excessive OAuth permissions, and identity risks in Microsoft 365 and Azure AD. |
+| **[silverhack/monkey365](https://github.com/silverhack/monkey365)** | [![GitHub stars](https://img.shields.io/github/stars/silverhack/monkey365?style=social&color=white)](https://github.com/silverhack/monkey365/stargazers) | Open-source PowerShell security assessment framework checking 300+ security configurations across Microsoft 365, Entra ID, and Azure subscriptions. |
+| **[maester365/maester](https://github.com/maester365/maester)** | [![GitHub stars](https://img.shields.io/github/stars/maester365/maester?style=social&color=white)](https://github.com/maester365/maester/stargazers) | Automated PowerShell test framework powered by Pester for auditing Microsoft 365, Microsoft Graph, and Entra ID security configuration hygiene. |
+| **[jonrau1/ElectricEye](https://github.com/jonrau1/ElectricEye)** | [![GitHub stars](https://img.shields.io/github/stars/jonrau1/ElectricEye?style=social&color=white)](https://github.com/jonrau1/ElectricEye/stargazers) | Multi-cloud and multi-SaaS posture management CLI in Python. Evaluates asset drift and misconfigurations mapped against 20+ compliance frameworks. |
+| **[cisagov/ScubaGoggles](https://github.com/cisagov/ScubaGoggles)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/ScubaGoggles?style=social&color=white)](https://github.com/cisagov/ScubaGoggles/stargazers) | CISA's Secure Cloud Business Applications (SCuBA) automated configuration posture assessment tool specifically for Google Workspace. |
+| **[open-sspm/open-sspm](https://github.com/open-sspm/open-sspm)** | [![GitHub stars](https://img.shields.io/github/stars/open-sspm/open-sspm?style=social&color=white)](https://github.com/open-sspm/open-sspm/stargazers) | Lightweight "who has access to what" identity auditor syncing Okta IdP identities with permissions in GitHub, Datadog, and AWS Identity Center. |
+| **[PiotrMackowski/ClosedSSPM](https://github.com/PiotrMackowski/ClosedSSPM)** | [![GitHub stars](https://img.shields.io/github/stars/PiotrMackowski/ClosedSSPM?style=social&color=white)](https://github.com/PiotrMackowski/ClosedSSPM/stargazers) | Read-only SaaS posture management CLI in Go for enterprise platforms (starting with ServiceNow), exporting SARIF output for DefectDojo with MCP integration. |
+
+---
+
+## Evaluation & Architecture Guide
+
+When designing or procuring a SaaS Security Posture Management solution, evaluate tools against the following key architectural capabilities:
+
+1. **Breadth of Ecosystem Coverage:** Commercial platforms cover 150–200+ enterprise SaaS platforms (Salesforce, Workday, Google Workspace, GitHub, Slack, ServiceNow, M365), whereas open-source utilities specialize in single-ecosystem audits (e.g., CISA ScubaGear for M365, ScubaGoggles for Google Workspace).
+2. **Non-Human Identity (NHI) & OAuth Governance:** Continuous discovery of shadow third-party integrations, OAuth tokens, and rogue AI extensions with automated revocation workflows.
+3. **Identity Threat Detection & Response (ITDR):** Correlating user behavior (UEBA) and login activity against posture drift to catch active account takeovers.
+4. **Configuration Hardening & Continuous Compliance:** Automated real-time scanning against CIS Benchmarks, NIST SP 800-53, ISO 27001, SOC 2, and SCuBA baselines.
+5. **Automated vs. Guided Remediation:** API-driven rollback of unauthorized permission escalation, file exposure containment, and web-hook alert triggers into SIEM/SOAR pipelines.
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update entries in `README.md`.
+3. Ensure pricing, company metrics, and repository star badges adhere to the table structure.
+4. Submit a pull request with a concise explanation.
+
+---
+
+## Disclaimer
+
+- Community-curated resource for informational and architectural guidance; not an endorsement of specific vendors.
+- SSPM tools access sensitive tenant configuration and metadata; ensure audit credentials utilize strictly scoped, read-only permissions (e.g., read-only ServiceNow roles, audit-only Graph scopes).
+- Verify licensing and compliance guidelines for enterprise and commercial implementations.
+
+---
 
 ## Star History
 
