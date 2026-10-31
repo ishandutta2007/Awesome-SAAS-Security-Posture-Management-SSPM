@@ -57,22 +57,22 @@ Below is an overview of enterprise SaaS Security Posture Management platforms, c
 
 Open-source tooling in SSPM consists primarily of CLI posture evaluators, configuration baseline auditors, and access sync engines. 
 
-The table below presents the top open-source projects sorted by GitHub star count in descending order. Each badge links directly to the repository's stargazers:
+The table below presents the top open-source projects sorted by GitHub Stars_Count in descending order. Each badge links directly to the repository's stargazers:
 
-| Repository | GitHub Stars | Focus & Description |
+| Repository | GitHub_Stars | Focus & Description |
 | :--- | :--- | :--- |
-| **[turbot/steampipe](https://github.com/turbot/steampipe)** | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe?style=social&color=white)](https://github.com/turbot/steampipe/stargazers) | Universal SQL query interface for APIs. Enables live SQL querying of SaaS security posture and configurations across Slack, GitHub, Google Workspace, Okta, and major clouds. |
-| **[nccgroup/ScoutSuite](https://github.com/nccgroup/ScoutSuite)** | [![GitHub stars](https://img.shields.io/github/stars/nccgroup/ScoutSuite?style=social&color=white)](https://github.com/nccgroup/ScoutSuite/stargazers) | Multi-cloud and multi-tenant security auditing tool. *(Note: Unmaintained since May 2024; retained for historical context and auditing inspiration)*. |
-| **[forter/security-101-for-saas-startups](https://github.com/forter/security-101-for-saas-startups)** | [![GitHub stars](https://img.shields.io/github/stars/forter/security-101-for-saas-startups?style=social&color=white)](https://github.com/forter/security-101-for-saas-startups/stargazers) | Comprehensive baseline checklists, architectural patterns, and hardening guides for securing modern SaaS companies and operations. |
-| **[cisagov/ScubaGear](https://github.com/cisagov/ScubaGear)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/ScubaGear?style=social&color=white)](https://github.com/cisagov/ScubaGear/stargazers) | CISA's official assessment tool for Microsoft 365 security posture (SCuBA). Evaluates tenant configurations against CISA baselines via PowerShell and Open Policy Agent (OPA). |
-| **[BishopFox/cloudfox](https://github.com/BishopFox/cloudfox)** | [![GitHub stars](https://img.shields.io/github/stars/BishopFox/cloudfox?style=social&color=white)](https://github.com/BishopFox/cloudfox/stargazers) | Automated situational awareness and attack path discovery tool for cloud and federated identity tenants. |
-| **[cisagov/Sparrow](https://github.com/cisagov/Sparrow)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/Sparrow?style=social&color=white)](https://github.com/cisagov/Sparrow/stargazers) | CISA's forensic tool designed to detect compromised accounts, excessive OAuth permissions, and identity risks in Microsoft 365 and Azure AD. |
-| **[silverhack/monkey365](https://github.com/silverhack/monkey365)** | [![GitHub stars](https://img.shields.io/github/stars/silverhack/monkey365?style=social&color=white)](https://github.com/silverhack/monkey365/stargazers) | Open-source PowerShell security assessment framework checking 300+ security configurations across Microsoft 365, Entra ID, and Azure subscriptions. |
-| **[maester365/maester](https://github.com/maester365/maester)** | [![GitHub stars](https://img.shields.io/github/stars/maester365/maester?style=social&color=white)](https://github.com/maester365/maester/stargazers) | Automated PowerShell test framework powered by Pester for auditing Microsoft 365, Microsoft Graph, and Entra ID security configuration hygiene. |
-| **[jonrau1/ElectricEye](https://github.com/jonrau1/ElectricEye)** | [![GitHub stars](https://img.shields.io/github/stars/jonrau1/ElectricEye?style=social&color=white)](https://github.com/jonrau1/ElectricEye/stargazers) | Multi-cloud and multi-SaaS posture management CLI in Python. Evaluates asset drift and misconfigurations mapped against 20+ compliance frameworks. |
-| **[cisagov/ScubaGoggles](https://github.com/cisagov/ScubaGoggles)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/ScubaGoggles?style=social&color=white)](https://github.com/cisagov/ScubaGoggles/stargazers) | CISA's Secure Cloud Business Applications (SCuBA) automated configuration posture assessment tool specifically for Google Workspace. |
-| **[open-sspm/open-sspm](https://github.com/open-sspm/open-sspm)** | [![GitHub stars](https://img.shields.io/github/stars/open-sspm/open-sspm?style=social&color=white)](https://github.com/open-sspm/open-sspm/stargazers) | Lightweight "who has access to what" identity auditor syncing Okta IdP identities with permissions in GitHub, Datadog, and AWS Identity Center. |
-| **[PiotrMackowski/ClosedSSPM](https://github.com/PiotrMackowski/ClosedSSPM)** | [![GitHub stars](https://img.shields.io/github/stars/PiotrMackowski/ClosedSSPM?style=social&color=white)](https://github.com/PiotrMackowski/ClosedSSPM/stargazers) | Read-only SaaS posture management CLI in Go for enterprise platforms (starting with ServiceNow), exporting SARIF output for DefectDojo with MCP integration. |
+| **[turbot/steampipe](https://github.com/turbot/steampipe)** | [![GitHub_Stars](https://img.shields.io/github/stars/turbot/steampipe?style=social&color=white)](https://github.com/turbot/steampipe/stargazers) | Universal SQL query interface for APIs. Enables live SQL querying of SaaS security posture and configurations across Slack, GitHub, Google Workspace, Okta, and major clouds. |
+| **[nccgroup/ScoutSuite](https://github.com/nccgroup/ScoutSuite)** | [![GitHub_Stars](https://img.shields.io/github/stars/nccgroup/ScoutSuite?style=social&color=white)](https://github.com/nccgroup/ScoutSuite/stargazers) | Multi-cloud and multi-tenant security auditing tool. *(Note: Unmaintained since May 2024; retained for historical context and auditing inspiration)*. |
+| **[forter/security-101-for-saas-startups](https://github.com/forter/security-101-for-saas-startups)** | [![GitHub_Stars](https://img.shields.io/github/stars/forter/security-101-for-saas-startups?style=social&color=white)](https://github.com/forter/security-101-for-saas-startups/stargazers) | Comprehensive baseline checklists, architectural patterns, and hardening guides for securing modern SaaS companies and operations. |
+| **[cisagov/ScubaGear](https://github.com/cisagov/ScubaGear)** | [![GitHub_Stars](https://img.shields.io/github/stars/cisagov/ScubaGear?style=social&color=white)](https://github.com/cisagov/ScubaGear/stargazers) | CISA's official assessment tool for Microsoft 365 security posture (SCuBA). Evaluates tenant configurations against CISA baselines via PowerShell and Open Policy Agent (OPA). |
+| **[BishopFox/cloudfox](https://github.com/BishopFox/cloudfox)** | [![GitHub_Stars](https://img.shields.io/github/stars/BishopFox/cloudfox?style=social&color=white)](https://github.com/BishopFox/cloudfox/stargazers) | Automated situational awareness and attack path discovery tool for cloud and federated identity tenants. |
+| **[cisagov/Sparrow](https://github.com/cisagov/Sparrow)** | [![GitHub_Stars](https://img.shields.io/github/stars/cisagov/Sparrow?style=social&color=white)](https://github.com/cisagov/Sparrow/stargazers) | CISA's forensic tool designed to detect compromised accounts, excessive OAuth permissions, and identity risks in Microsoft 365 and Azure AD. |
+| **[silverhack/monkey365](https://github.com/silverhack/monkey365)** | [![GitHub_Stars](https://img.shields.io/github/stars/silverhack/monkey365?style=social&color=white)](https://github.com/silverhack/monkey365/stargazers) | Open-source PowerShell security assessment framework checking 300+ security configurations across Microsoft 365, Entra ID, and Azure subscriptions. |
+| **[maester365/maester](https://github.com/maester365/maester)** | [![GitHub_Stars](https://img.shields.io/github/stars/maester365/maester?style=social&color=white)](https://github.com/maester365/maester/stargazers) | Automated PowerShell test framework powered by Pester for auditing Microsoft 365, Microsoft Graph, and Entra ID security configuration hygiene. |
+| **[jonrau1/ElectricEye](https://github.com/jonrau1/ElectricEye)** | [![GitHub_Stars](https://img.shields.io/github/stars/jonrau1/ElectricEye?style=social&color=white)](https://github.com/jonrau1/ElectricEye/stargazers) | Multi-cloud and multi-SaaS posture management CLI in Python. Evaluates asset drift and misconfigurations mapped against 20+ compliance frameworks. |
+| **[cisagov/ScubaGoggles](https://github.com/cisagov/ScubaGoggles)** | [![GitHub_Stars](https://img.shields.io/github/stars/cisagov/ScubaGoggles?style=social&color=white)](https://github.com/cisagov/ScubaGoggles/stargazers) | CISA's Secure Cloud Business Applications (SCuBA) automated configuration posture assessment tool specifically for Google Workspace. |
+| **[open-sspm/open-sspm](https://github.com/open-sspm/open-sspm)** | [![GitHub_Stars](https://img.shields.io/github/stars/open-sspm/open-sspm?style=social&color=white)](https://github.com/open-sspm/open-sspm/stargazers) | Lightweight "who has access to what" identity auditor syncing Okta IdP identities with permissions in GitHub, Datadog, and AWS Identity Center. |
+| **[PiotrMackowski/ClosedSSPM](https://github.com/PiotrMackowski/ClosedSSPM)** | [![GitHub_Stars](https://img.shields.io/github/stars/PiotrMackowski/ClosedSSPM?style=social&color=white)](https://github.com/PiotrMackowski/ClosedSSPM/stargazers) | Read-only SaaS posture management CLI in Go for enterprise platforms (starting with ServiceNow), exporting SARIF output for DefectDojo with MCP integration. |
 
 ---
 
@@ -92,7 +92,7 @@ When designing or procuring a SaaS Security Posture Management solution, evaluat
 
 1. Fork this repository.
 2. Add or update entries in `README.md`.
-3. Ensure pricing, company metrics, and repository star badges adhere to the table structure.
+3. Ensure pricing, company metrics, and repository Stars_Badges adhere to the table structure.
 4. Submit a pull request with a concise explanation.
 
 ---
@@ -118,3 +118,12 @@ Thank you for exploring and using this curated SaaS Security Posture Management 
 
 ##  Star History
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&type=date&legend=top-left)
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-SAAS-Security-Posture-Management-SSPM_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-SAAS-Security-Posture-Management-SSPM_growth.svg">
+  </picture>
+</a>
