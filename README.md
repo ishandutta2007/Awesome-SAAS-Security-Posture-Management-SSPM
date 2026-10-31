@@ -183,3 +183,12 @@ Star the repo if you find it useful!
 **Made for security architects, SaaS administrators, and teams building posture management capabilities.**  
 
 Let's make SSPM more open, but with clear eyes about the explicit gap that practitioners acknowledge—there is no open-source SSPM today.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-SAAS-Security-Posture-Management-SSPM_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-SAAS-Security-Posture-Management-SSPM_growth.svg">
+  </picture>
+</a>
