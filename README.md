@@ -1,27 +1,41 @@
-# Awesome SaaS Security Posture Management (SSPM) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome SaaS Security Posture Management (SSPM) Banner" width="100%" />
+</p>
 
-> A curated list of leading **SaaS Security Posture Management (SSPM)** platforms, tools, and open-source GitHub projects for SaaS configuration hardening, identity & access governance (ITDR), non-human identity (NHI) mapping, shadow SaaS discovery, and continuous compliance auditing.
+# 🛡️ Awesome SaaS Security Posture Management (SSPM)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesoee-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM?style=social" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM?style=social" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🔍 A curated list of leading **SaaS Security Posture Management (SSPM)** platforms, tools, and open-source GitHub projects for SaaS configuration hardening, identity & access governance (ITDR), non-human identity (NHI) mapping, shadow SaaS discovery, and continuous compliance auditing.
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global **SaaS Security Posture Management (SSPM)** market size is valued at approximately **$480M–$500M** and is projected to expand rapidly toward **$3.5B+ by 2030**, recording an aggressive CAGR of ~48%. The sector is currently **moderately fragmented**—driven by agile, venture-backed pure-play innovators (Obsidian Security, AppOmni, Wing Security, Valence Security) addressing specialized risks such as third-party OAuth app permissions, AI agent governance, and SaaS misconfigurations—while steadily undergoing platform consolidation as cybersecurity conglomerates (CrowdStrike, Palo Alto Networks, Microsoft, Netskope) fold SSPM capabilities into unified CNAPP, CASB, and SASE security architectures.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Evaluation & Architecture Guide](#evaluation--architecture-guide)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-- [Star History](#star-history)
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Evaluation & Architecture Guide](#️-evaluation--architecture-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [📈 Star History](#-star-history)
 
 ---
 
-## SaaS / Hosted Platforms
+## ☁️ SaaS / Hosted Platforms
 
 Below is an overview of enterprise SaaS Security Posture Management platforms, comparing vendor market scale (market capitalization / valuation), starting tier pricing, and free tier or trial limits. Sorted by company scale in descending order:
 
@@ -39,7 +53,7 @@ Below is an overview of enterprise SaaS Security Posture Management platforms, c
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Open-source tooling in SSPM consists primarily of CLI posture evaluators, configuration baseline auditors, and access sync engines. 
 
@@ -62,19 +76,19 @@ The table below presents the top open-source projects sorted by GitHub star coun
 
 ---
 
-## Evaluation & Architecture Guide
+## 🏗️ Evaluation & Architecture Guide
 
 When designing or procuring a SaaS Security Posture Management solution, evaluate tools against the following key architectural capabilities:
 
-1. **Breadth of Ecosystem Coverage:** Commercial platforms cover 150–200+ enterprise SaaS platforms (Salesforce, Workday, Google Workspace, GitHub, Slack, ServiceNow, M365), whereas open-source utilities specialize in single-ecosystem audits (e.g., CISA ScubaGear for M365, ScubaGoggles for Google Workspace).
-2. **Non-Human Identity (NHI) & OAuth Governance:** Continuous discovery of shadow third-party integrations, OAuth tokens, and rogue AI extensions with automated revocation workflows.
-3. **Identity Threat Detection & Response (ITDR):** Correlating user behavior (UEBA) and login activity against posture drift to catch active account takeovers.
-4. **Configuration Hardening & Continuous Compliance:** Automated real-time scanning against CIS Benchmarks, NIST SP 800-53, ISO 27001, SOC 2, and SCuBA baselines.
-5. **Automated vs. Guided Remediation:** API-driven rollback of unauthorized permission escalation, file exposure containment, and web-hook alert triggers into SIEM/SOAR pipelines.
+1. **🌐 Breadth of Ecosystem Coverage:** Commercial platforms cover 150–200+ enterprise SaaS platforms (Salesforce, Workday, Google Workspace, GitHub, Slack, ServiceNow, M365), whereas open-source utilities specialize in single-ecosystem audits (e.g., CISA ScubaGear for M365, ScubaGoggles for Google Workspace).
+2. **🔑 Non-Human Identity (NHI) & OAuth Governance:** Continuous discovery of shadow third-party integrations, OAuth tokens, and rogue AI extensions with automated revocation workflows.
+3. **🚨 Identity Threat Detection & Response (ITDR):** Correlating user behavior (UEBA) and login activity against posture drift to catch active account takeovers.
+4. **🔒 Configuration Hardening & Continuous Compliance:** Automated real-time scanning against CIS Benchmarks, NIST SP 800-53, ISO 27001, SOC 2, and SCuBA baselines.
+5. **⚡ Automated vs. Guided Remediation:** API-driven rollback of unauthorized permission escalation, file exposure containment, and web-hook alert triggers into SIEM/SOAR pipelines.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 1. Fork this repository.
 2. Add or update entries in `README.md`.
@@ -83,7 +97,18 @@ When designing or procuring a SaaS Security Posture Management solution, evaluat
 
 ---
 
-## Disclaimer
+## 💖 Support
+
+Thank you for exploring and using this curated SaaS Security Posture Management guide! If you find this repository valuable:
+
+- ⭐ **Star this repository** to show your appreciation and help others discover it.
+- 🍴 **Fork and contribute** to expand the collective knowledge base.
+- 📢 **Share with your network**, security peers, or cloud engineering teams.
+- ☕ **Buy a coffee / support maintenance:** Visit the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007) to help support continuous updates and open-source curation!
+
+---
+
+## ⚠️ Disclaimer
 
 - Community-curated resource for informational and architectural guidance; not an endorsement of specific vendors.
 - SSPM tools access sensitive tenant configuration and metadata; ensure audit credentials utilize strictly scoped, read-only permissions (e.g., read-only ServiceNow roles, audit-only Graph scopes).
@@ -91,11 +116,5 @@ When designing or procuring a SaaS Security Posture Management solution, evaluat
 
 ---
 
-## Star History
-
-<a href="https://star-history.com/#ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&Timeline" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-SAAS-Security-Posture-Management-SSPM_growth.svg">
-    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-SAAS-Security-Posture-Management-SSPM_growth.svg">
-  </picture>
-</a>
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-SAAS-Security-Posture-Management-SSPM&type=date&legend=top-left)
